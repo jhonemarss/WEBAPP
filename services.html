@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SERVICES</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel= "icon" href ="../html/VYKES.jpg"/>
+        <!-- Boxicons CDN Link -->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/b13e507b6c.js" crossorigin="anonymous"></script>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans" ,sans-serif;
+}
+.BGPIC{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../html/store.jpg);
+    background-size: cover;
+}
+.BAR {
+    width: 85%;
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.LOGOPIC {
+    width: 120px;
+    cursor: pointer;
+    border-radius: 20%;
+    opacity: .9;
+}
+
+.BAR ul li {
+    list-style: none;
+    display: inline-block;
+    margin:  20px;
+    position: relative;
+
+}
+
+.BAR ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.BAR ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+}
+.BAR ul li:hover::after{
+    width: 100%;
+}
+.Services{
+    position: relative;
+    min-height: 70.1vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),  url(../html/afasfasfasf2232.jpg);
+    background-size: cover;
+}
+.Services .content{
+    max-width: 800px;
+    text-align: center;
+}
+.Services .content h2{
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+    
+}
+.Services .content p{
+    font-weight: 500;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    min-width: 50px;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #00f2ff;
+}
+.contactForm{
+    width: 30%;
+    padding: 30px;
+    background: white;
+}
+.contactForm h2{
+    font-size: 40px;
+    color: black;
+    font-weight: 600;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 15px 0;
+    border: none;
+    border-bottom: 2px solid #000000;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: red;
+    font-size: 15px;
+    transform: translate(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00f2ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+        </style>
+    </head>
+    <body>
+
+        <div class="BGPIC">
+            <div class="BAR">
+                <img src="../html/VYKES.jpg" class="LOGOPIC">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="product.html">BIKES</a></li>
+                    <li><a href="Gears.html">GEARS</a></li>
+                    <li><a href="ABOUTUS.html">ABOUT US</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="Services">
+            <div class="content">
+                <h2>SERVICES</h2>
+            <p>Vykes MNL is a bicycle store offering retail and wholesale of bicycles, parts and accessories. 
+                In 2021, we combined as one business in a great new location. Vykes Mnl started in 2018, on 109 Gen. 
+                Molina St. Parang, Marikina City, Philippines, and was a fixture on the Manila City for more than 3years,
+                growing into the leading mountain and commuter bike shop in Marikina.</p>
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p>109 Gen. Molina St. Parang 1809 Marikina City, Philippines</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-envelope-square"></i></div>
+                        <div class="text">
+                            <h3>Gmail</h3>
+                            <p>vykesmnl@gmail.com</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fas fa-phone-square-alt"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>286567139</p>
+            </div>
+        </div>
+    </div>
+    <div class="contactForm">
+        <form>
+            <h2>Send Message</h2>
+            <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span>Full Name</span>
+                </div>
+            <div class="inputBox">
+                <input type="email" name="" required="required">
+                <span>Email</span>
+                </div>
+            <div class="inputBox">
+                <textarea required="required"></textarea>
+                <span>Your Message</span>
+                </div>
+            <div class="inputBox">
+                <input type="submit" name="" value="Send">
+            </div>    
+        </form>
+    </div>
+</div>
+        </section>
+    </body>
+</html>

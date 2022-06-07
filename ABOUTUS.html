@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ABOUT US</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel= "icon" href ="../html/VYKES.jpg"/>
+        <!-- Boxicons CDN Link -->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/b13e507b6c.js" crossorigin="anonymous"></script>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans" ,sans-serif;
+}
+
+.BGPIC {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../html/store.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.BAR {
+    width: 85%;
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LOGOPIC {
+    width: 120px;
+    cursor: pointer;
+    border-radius: 20%;
+    opacity: .9;
+}
+
+.BAR ul li {
+    list-style: none;
+    display: inline-block;
+    margin:  20px;
+    position: relative;
+
+}
+
+.BAR ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.BAR ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+}
+.BAR ul li:hover::after{
+    width: 100%;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 55px;
+    font-weight: 600;
+}
+p{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 50px; 
+    text-indent: auto;
+}
+h4{
+    color: red;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 800;
+}
+.newslatter form{
+    width: 340px;
+    max-width: 100%;
+    position: relative;
+}
+.newslatter form input:first-child{
+    display: inline-block;
+    width: 90%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #00f2ff;
+    outline: none;
+    border-radius: 30px;
+}
+.newslatter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color:  #00f2ff;
+    color: white;
+    box-shadow: 0px 0px 5px black, 0px 0px   #00f2ff;
+    top: 6px;
+    right: -100px;
+
+}
+        </style>
+    </head>
+    <body>
+
+        <div class="BGPIC">
+            <div class="BAR">
+                <img src="../html/VYKES.jpg" class="LOGOPIC">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="product.html">BIKES</a></li>
+                    <li><a href="Gears.html">GEARS</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <h4>ABOUT US</h4>
+            <h1>VYKES MNL</h1>
+            <p>Vykes Mnl service offers professional service on everything from fixing flat tires and basic tune-ups,<br>
+                to complete overhauls. Our mechanics are fully qualified to work on even the most complicated components.</br>
+                Bikers need maintenance service professionals to fix bikes and other malfunctioning equipment.<br>
+                Maintenance professionals help ensure that a biker's property parts  properly, and they're available to address service requests as needed.</br>
+            <div class="newslatter">
+                <form>
+                    <input type="email" name="Email" id="mail" placeholder="Let's Be Friends">
+                    <input type="submit" name="submit" value="Add Email">
+                </form>
+            </div>
+        </div>
+      
+        
+    </body>
+</html>
